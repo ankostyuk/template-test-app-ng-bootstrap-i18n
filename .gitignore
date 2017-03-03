@@ -1,0 +1,15 @@
+tmp
+.tmp*
+
+node_modules
+bower_components
+target
+
+npm-debug.log
+
+*~
+
+/.DS_Store
+.DS_Store
+
+i18n/angular

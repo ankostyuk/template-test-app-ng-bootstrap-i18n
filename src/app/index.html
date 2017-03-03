@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="{{::app.lang}}">
+    <head>
+        <meta charset=utf-8>
+        <meta content="IE=edge" http-equiv=X-UA-Compatible>
+        <meta content="width=device-width,initial-scale=1" name=viewport>
+        <meta content="xxx" name=description>
+        <meta content="ankostyuk" name=author>
+        <title ng-bind='appConfig.name'>xxx</title>
+    </head>
+
+    <body class="xxx" ng-class="{'ready': isAppReady()}">
+        <div class="container">
+            <div class="row app-header">
+                <div class="col-xs-10">
+                    <h1>{{::appConfig.name}}</h1>
+                </div>
+                <div class="col-xs-2 text-right" app-lang-switch></div>
+            </div>
+            <hr class="app-footer">
+        </div>
+        <div app-error-message></div>
+        <div np-loader ng-hide="isAppReady()"><div class="line-balls"></div></div>
+    </body>
+</html>

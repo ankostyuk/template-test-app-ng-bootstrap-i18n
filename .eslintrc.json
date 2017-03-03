@@ -1,0 +1,28 @@
+{
+    "extends": "eslint:recommended",
+
+    "env": {
+        "commonjs": true,
+        "node": true,
+        "browser": true
+    },
+
+    "globals": {
+        "_tr": true,
+        "_trc": true,
+        "_trn": true,
+        "_trnc": true,
+        "$": true,
+        "jQuery": true,
+        "ga": true,
+        "CONFIG": true
+    },
+
+    "rules": {
+        "indent": ["warn", 4],
+        "linebreak-style": ["error", "unix"],
+
+        "no-unused-vars": "warn",
+        "no-console": "off"
+    }
+}
